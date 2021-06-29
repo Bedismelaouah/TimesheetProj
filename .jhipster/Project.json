@@ -1,0 +1,39 @@
+{
+  "name": "Project",
+  "fields": [
+    {
+      "fieldName": "projectName",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "module",
+      "otherEntityRelationshipName": "project",
+      "relationshipName": "module"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "client",
+      "otherEntityRelationshipName": "project",
+      "relationshipName": "client"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "typeProject",
+      "otherEntityRelationshipName": "project",
+      "relationshipName": "typeProject"
+    }
+  ],
+  "entityTableName": "project",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210629102702"
+}

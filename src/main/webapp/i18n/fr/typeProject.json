@@ -1,0 +1,25 @@
+{
+  "timesheet2App": {
+    "typeProject": {
+      "home": {
+        "title": "TypeProjects",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Type Project",
+        "createOrEditLabel": "Créer ou éditer un Type Project",
+        "notFound": "Aucun Type Project trouvé"
+      },
+      "created": "Un nouveau Type Project a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Type Project avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Type Project avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Type Project {{ id }} ?"
+      },
+      "detail": {
+        "title": "Type Project"
+      },
+      "id": "ID",
+      "type": "Type",
+      "project": "Project"
+    }
+  }
+}

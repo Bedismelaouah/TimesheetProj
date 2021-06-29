@@ -1,0 +1,57 @@
+
+entity Project {
+	projectName String
+}
+
+entity TypeProject {
+    Type String
+}
+
+// an ignored comment
+/** not an ignored comment */
+entity Client {
+	firstname String,
+	lastname String,
+	email String,
+	phone String
+}
+
+entity Module {
+	name String required,
+    description String
+}
+
+entity UserInfo {
+	
+	firstname String,
+	lastname String,
+	email String,
+	phone String
+	
+}
+
+entity Role {
+	role String
+}
+
+
+
+
+
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	Project to Module
+	
+}
+
+relationship ManyToOne {
+	Project to Client
+    Role to UserInfo
+    Project to TypeProject
+    Module to UserInfo
+}
+
+
+
+

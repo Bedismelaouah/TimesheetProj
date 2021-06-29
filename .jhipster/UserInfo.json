@@ -1,0 +1,45 @@
+{
+  "name": "UserInfo",
+  "fields": [
+    {
+      "fieldName": "firstname",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lastname",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "phone",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "role",
+      "otherEntityRelationshipName": "userInfo",
+      "relationshipName": "role"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "module",
+      "otherEntityRelationshipName": "userInfo",
+      "relationshipName": "module"
+    }
+  ],
+  "entityTableName": "user_info",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210629102706"
+}

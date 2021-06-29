@@ -41,6 +41,8 @@
     "jwtSecretKey": "YjIxMDc3YWI4ZWUyM2U4ZDdlMTEzZGFhNzBhZGExNjEwOWU1Yzk5ZDRkOGM3ZDNjZGZiNTRkMmVkMGY3ZjEyOGU2NDJjNjlkZmUzZjA4YjJlN2FjMzMyZDFmMGIwNjU2MjAzOWQ3Nzk4NWJiMTc3NDZhYjgxYzFkYTQ2NTgzMmU=",
     "clientPackageManager": "npm",
     "clientThemeVariant": "",
-    "languages": ["fr"]
+    "languages": ["fr"],
+    "entities": ["Project", "TypeProject", "Client", "Module", "UserInfo", "Role"],
+    "lastLiquibaseTimestamp": 1624962427000
   }
 }

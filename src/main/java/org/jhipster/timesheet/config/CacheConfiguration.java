@@ -48,6 +48,17 @@ public class CacheConfiguration {
             createCache(cm, org.jhipster.timesheet.domain.User.class.getName());
             createCache(cm, org.jhipster.timesheet.domain.Authority.class.getName());
             createCache(cm, org.jhipster.timesheet.domain.User.class.getName() + ".authorities");
+            createCache(cm, org.jhipster.timesheet.domain.Project.class.getName());
+            createCache(cm, org.jhipster.timesheet.domain.Project.class.getName() + ".modules");
+            createCache(cm, org.jhipster.timesheet.domain.TypeProject.class.getName());
+            createCache(cm, org.jhipster.timesheet.domain.TypeProject.class.getName() + ".projects");
+            createCache(cm, org.jhipster.timesheet.domain.Client.class.getName());
+            createCache(cm, org.jhipster.timesheet.domain.Client.class.getName() + ".projects");
+            createCache(cm, org.jhipster.timesheet.domain.Module.class.getName());
+            createCache(cm, org.jhipster.timesheet.domain.UserInfo.class.getName());
+            createCache(cm, org.jhipster.timesheet.domain.UserInfo.class.getName() + ".roles");
+            createCache(cm, org.jhipster.timesheet.domain.UserInfo.class.getName() + ".modules");
+            createCache(cm, org.jhipster.timesheet.domain.Role.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
